@@ -1,5 +1,6 @@
 {
   "expo": {
+    
     "name": "native",
     "slug": "native",
     "version": "1.0.0",
@@ -17,7 +18,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0",
+      "bundleIdentifier": "bundle.appsmen.nl.test"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,6 +30,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development",
+          "iPhoneDeploymentTarget": "12.0"
+        }
+      ]
+    ]
   }
 }
